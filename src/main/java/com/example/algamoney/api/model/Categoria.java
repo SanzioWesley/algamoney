@@ -9,11 +9,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "categoria")
 public class Categoria {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-	
+
 	private String nome;
 
 	public Long getCodigo() {
@@ -56,5 +56,5 @@ public class Categoria {
 			return false;
 		return true;
 	}
-	
+
 }
